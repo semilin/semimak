@@ -30,7 +30,7 @@ experiences and what great typists much faster than me have said.
 This is pretty simple. I square the distance to punish distance
 exponentially. A distance of 1u is treated as 1, whereas a distance of
 2u is treated as 4. In addition, lateral/horizontal movement is
-treated as 1.5x the amount. This is because a reasonable amount of
+treated as 1.6x the amount. This is because a reasonable amount of
 people find this movement to be more uncomfortable.
 
 ## Finger weighting
@@ -47,7 +47,7 @@ of having balanced index finger usage.
 
 ## Generation and analysis
 I wrote an analyzer/generator for this project on
-[github.com/semilin/genkey](my Github). It was initially intended to
+[my Github](https://github.com/semilin/genkey). It was initially intended to
 be a quick hack-up but it ended up one of the more powerful generators
 out there. Even so, it was mostly made for myself, so it will be
 difficult for other people to use. 
