@@ -7,7 +7,7 @@ the "m_y" in "may" on QWERTY). It is not certain if a layout can
 change maximum potential speed, but Semimak should be near the best
 possible in that regards.
 
-A picture of the layout will be here on July 1st.
+![Frequency heatmap of Semimak](./heatmap.png)
 
 # Development
 Most layout analyzers at the moment report an SFB percentage - how
@@ -27,11 +27,11 @@ These weights are arbitrary, but they were inspired both by my own
 experiences and what great typists much faster than me have said. 
 
 ## Distance weighting
-This is pretty simple. I square the distance to punish distance
-exponentially. A distance of 1u is treated as 1, whereas a distance of
-2u is treated as 4. In addition, lateral/horizontal movement is
-treated as 1.6x the amount. This is because a reasonable amount of
-people find this movement to be more uncomfortable.
+This is pretty simple. I punish the distance between keys
+exponentially, as I think a distance of 2 units is much worse than a
+distance of 1 unit. Layouts like Workman and Colemak DH have shown the
+discomfort that can be cause with lateral index movement - because of
+this, lateral movement is treated worse on my analyzer.
 
 ## Finger weighting
 I used a script that NotGate wrote to test how quickly I can move each
@@ -41,9 +41,9 @@ per second was. This data was then used to weight how bad fast
 distance is on each finger.
 
 ## Scoring
-As of the most recent iteration, I score largely on the finger
-movement rate metric, a little bit with rolls, and some encouragement
-of having balanced index finger usage.
+As of the most recent iteration, I score largely bassed off of the weighted finger
+movement rate metric. In addition, there was some reward for rolling and high
+penalty for redirects.
 
 ## Generation and analysis
 I wrote an analyzer/generator for this project on
@@ -57,4 +57,4 @@ number of keys that are swapped at a time - this is done to break out
 of local optima.
 
 # Download
-Downloads will be available on July 1st for EPKL, MSKLC, AHK, and Linux.
+Downloads for Windows native and EPKL, MacOS and Linux are available in [the Github Release page](https://github.com/semilin/semimak/releases)!
