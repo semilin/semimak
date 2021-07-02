@@ -41,7 +41,7 @@ per second was. This data was then used to weight how bad fast
 distance is on each finger.
 
 ## Scoring
-As of the most recent iteration, I score largely bassed off of the weighted finger
+As of the most recent iteration, I score largely based off of the weighted finger
 movement rate metric. In addition, there was some reward for rolling and high
 penalty for redirects.
 
